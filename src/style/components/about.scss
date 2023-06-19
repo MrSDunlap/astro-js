@@ -1,0 +1,67 @@
+// Global style import ==========================
+@use "../globals/" as g;
+// ------------------------------------------------
+
+.wrapper {
+  h1 {
+    @include g.title;
+    color: var(--primary-00);
+  }
+  h3 {
+    @include g.sub-header;
+    color: var(--primary-01);
+  }
+  .boxes {
+    display: flex;
+    gap: 2rem;
+    .box {
+      width: 3rem;
+      aspect-ratio: 1/1;
+      border-radius: 0.5rem;
+      transition: transform 350ms ease;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+    .one {
+      background-color: var(--primary-00);
+    }
+    .two {
+      background-color: var(--primary-01);
+    }
+    .three {
+      background-color: var(--secondary-00);
+    }
+    .four {
+      background-color: var(--secondary-01);
+    }
+    .five {
+      background-color: var(--tertiary-00);
+    }
+  }
+  .header {
+    @include g.title;
+    color: var(--primary-00);
+  }
+  .sub-header {
+    @include g.sub-header;
+    color: var(--primary-00);
+  }
+  .body-desktop {
+    @include g.body-18;
+    color: var(--primary-00);
+  }
+  .body-tablet {
+    @include g.body-16;
+    color: var(--primary-00);
+  }
+  .body-mobile {
+    @include g.body-14;
+    color: var(--primary-00);
+  }
+  .legal {
+    @include g.legal-12;
+    color: var(--primary-00);
+  }
+}

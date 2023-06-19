@@ -1,0 +1,40 @@
+// Typography and fontface styles ==========================
+// Montserrat
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+// ------------------------------------------------
+
+html {
+  font-family: "Montserrat", sans-serif;
+  font-size: 62.5%;
+}
+
+@mixin title {
+  font-size: 3.6rem;
+  line-height: 3.8rem;
+  font-weight: 900;
+}
+@mixin sub-header {
+  font-size: 2.4rem;
+  line-height: 3rem;
+  font-weight: 800;
+}
+@mixin body-18 {
+  font-size: 1.8rem;
+  line-height: 2.6rem;
+  font-weight: 400;
+}
+@mixin body-16 {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  font-weight: 400;
+}
+@mixin body-14 {
+  font-size: 1.4rem;
+  line-height: 2rem;
+  font-weight: 400;
+}
+@mixin legal-12 {
+  font-size: 1.2rem;
+  line-height: 2rem;
+  font-weight: 400;
+}

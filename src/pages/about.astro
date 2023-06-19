@@ -1,4 +1,6 @@
 ---
+import "../style/components/about.scss";
+
 const pageTitle = "About Me";
 
 const identity = {
@@ -13,8 +15,6 @@ const skills = ["HTML", "CSS", "JavaScript", "React", "Astro", "SASS"];
 const happy = true;
 const finished = false;
 const goal = 3;
-
-const skillColor = "navy";
 ---
 
 <html lang="en">
@@ -24,17 +24,6 @@ const skillColor = "navy";
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <title>{pageTitle}</title>
-
-    <style define:vars={{ skillColor }}>
-      h1 {
-        color: purple;
-        font-size: 4rem;
-      }
-      .skill {
-        color: var(--skillColor);
-        font-weight: bold;
-      }
-    </style>
   </head>
   <body>
     <a href="/">Home</a>
@@ -81,5 +70,24 @@ const skillColor = "navy";
         <p>My goal is not 3 days.</p>
       )
     }
+
+    <div class="wrapper">
+      <h1>Montserrat</h1>
+      <h3>Color guide</h3>
+      <div class="boxes">
+        <span class="box one"></span>
+        <span class="box two"></span>
+        <span class="box three"></span>
+        <span class="box four"></span>
+        <span class="box five"></span>
+      </div>
+      <h3>Typography</h3>
+      <h1 class="header">Header - Lorem ipsum dolor sit amet.</h1>
+      <h1 class="sub-header">Sub Header - Lorem ipsum dolor sit amet.</h1>
+      <h1 class="body-desktop">Body Desktop - Lorem ipsum dolor sit amet.</h1>
+      <h1 class="body-tablet">Body Tablet - Lorem ipsum dolor sit amet.</h1>
+      <h1 class="body-mobile">Body Mobile - Lorem ipsum dolor sit amet.</h1>
+      <h1 class="legal">Legal - Lorem ipsum dolor sit amet.</h1>
+    </div>
   </body>
 </html>
