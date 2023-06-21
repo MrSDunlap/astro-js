@@ -1,0 +1,20 @@
+// Global style import ==========================
+@use "../globals/" as g;
+// ------------------------------------------------
+.nav-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  padding: 3rem 0;
+  background-color: var(--tertiary-00);
+  position: fixed;
+  top: 0;
+  left: 0;
+  a {
+    @include g.body-18;
+    text-decoration: none;
+    color: var(--primary-00);
+  }
+}
