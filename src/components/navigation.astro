@@ -1,9 +1,10 @@
 ---
 import "../style/components/nav.scss";
+import Header from "./header.astro";
 ---
 
 <div class="nav-container">
   <a href="/">Home</a>
-  <a href="/about/">About</a>
-  <a href="/blog/">Blog</a>
+  <Header page="about" />
+  <Header page="blog" />
 </div>
